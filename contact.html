@@ -90,7 +90,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Payyaparamba,Pandikkad,Malappuram,Kerala,676521</p>
+                <p>Pandikkad,Malappuram,Kerala,676521</p>
               </div>
 
               <div class="email">
@@ -111,7 +111,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form name="google-sheet" action="" method="post" role="form" class="was-validated">
+            <form name="google-sheet" id="eform" action="https://formspree.io/f/myyodeyn" method="post" role="form" onsubmit="return validation()" >
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -124,7 +124,7 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" id="message" required></textarea>
               </div>
               <!-- <div class="my-3">
                 <div class="loading">Loading</div>
@@ -166,9 +166,10 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <!-- <script src="validation.js"></script> -->
   <script src="assets/js/main.js"></script>
 
-  <script>
+  <!-- <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyx9c0hjYVaMskbzLOQa8nIO7MAnKmZR0NaelgxYlLyA26gJgSk2Jjv8W-xxA3QScOJ0g/exec'
     const form = document.forms['google-sheet']
   
@@ -178,7 +179,7 @@
         .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+  </script> -->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
